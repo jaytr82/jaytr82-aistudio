@@ -1,0 +1,159 @@
+:root {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #1d1a17;
+  background:
+    radial-gradient(circle at top, rgba(203, 161, 92, 0.22), transparent 32%),
+    linear-gradient(180deg, #f4eee2 0%, #ddd9c8 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.page-shell {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.hero-panel,
+.feature-panel,
+.readiness-panel {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 250, 241, 0.8);
+  border: 1px solid rgba(102, 85, 54, 0.24);
+  box-shadow: 0 24px 60px rgba(77, 60, 35, 0.12);
+}
+
+.hero-panel {
+  display: grid;
+  gap: 24px;
+  padding: 28px;
+  margin: 0 auto 24px;
+  max-width: 1180px;
+}
+
+.hero-copy {
+  max-width: 760px;
+}
+
+.eyebrow,
+.panel-kicker,
+.feature-category {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  color: #725a33;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 6vw, 5.8rem);
+  line-height: 0.95;
+  max-width: 12ch;
+}
+
+.lede {
+  margin-top: 20px;
+  max-width: 62ch;
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+.search-field {
+  display: grid;
+  gap: 10px;
+  max-width: 460px;
+}
+
+.search-field span {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.search-field input {
+  width: 100%;
+  border: 1px solid rgba(102, 85, 54, 0.25);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 14px 16px;
+}
+
+.content-grid {
+  display: grid;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.feature-panel,
+.readiness-panel {
+  padding: 24px;
+}
+
+.panel-header {
+  margin-bottom: 18px;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.feature-card {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(102, 85, 54, 0.18);
+}
+
+.feature-card h3,
+.readiness-panel h2 {
+  margin-bottom: 10px;
+}
+
+.feature-card p,
+.checklist li {
+  line-height: 1.6;
+}
+
+.checklist {
+  display: grid;
+  gap: 14px;
+  padding-left: 20px;
+  margin-top: 18px;
+}
+
+@media (min-width: 900px) {
+  .hero-panel {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: end;
+  }
+
+  .content-grid {
+    grid-template-columns: 1.4fr 0.8fr;
+    align-items: start;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

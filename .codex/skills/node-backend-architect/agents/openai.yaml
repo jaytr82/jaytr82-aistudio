@@ -1,0 +1,4 @@
+interface:
+  display_name: "Node Backend Architect"
+  short_description: "Design structured Node API backends"
+  default_prompt: "Use $node-backend-architect to design the structure of this Node API."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Microservices Architect"
+  short_description: "Design cleaner distributed boundaries"
+  default_prompt: "Use $microservices-architect to design service boundaries and communication patterns for this system."

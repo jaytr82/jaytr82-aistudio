@@ -1,0 +1,26 @@
+default_skills:
+  - industry-standard-engineer
+  - clean-code-enforcer
+
+auto_attach:
+  react:
+    - react-senior-engineer
+    - test-engineer
+  node:
+    - node-backend-architect
+    - test-engineer
+    - security-auditor
+  docker:
+    - docker-devops-master
+    - security-engineer-agent
+  python:
+    - python-pep-master
+    - test-engineer
+  typescript:
+    - typescript-strict-enforcer
+  database:
+    - database-optimizer
+
+strict_mode: true
+security_review: true
+auto_test_suggestion: true

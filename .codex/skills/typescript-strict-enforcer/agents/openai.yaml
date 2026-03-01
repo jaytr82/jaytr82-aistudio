@@ -1,0 +1,4 @@
+interface:
+  display_name: "TypeScript Strict Enforcer"
+  short_description: "Keep TypeScript strict and safer"
+  default_prompt: "Use $typescript-strict-enforcer to strengthen the typing in this TypeScript code."

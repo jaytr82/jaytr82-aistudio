@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tech Lead Agent"
+  short_description: "Guide refactors and engineering tradeoffs"
+  default_prompt: "Use $tech-lead-agent to review the tradeoffs and consistency of this change."

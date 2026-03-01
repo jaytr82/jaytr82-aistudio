@@ -1,0 +1,4 @@
+interface:
+  display_name: "Performance Optimizer"
+  short_description: "Improve speed without messy tradeoffs"
+  default_prompt: "Use $performance-optimizer to identify the most meaningful performance improvements in this code."

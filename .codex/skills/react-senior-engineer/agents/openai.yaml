@@ -1,0 +1,4 @@
+interface:
+  display_name: "React Senior Engineer"
+  short_description: "Shape cleaner modern React frontends"
+  default_prompt: "Use $react-senior-engineer to improve the structure and behavior of this React code."

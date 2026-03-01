@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Code Enforcer"
+  short_description: "Keep implementations readable and tight"
+  default_prompt: "Use $clean-code-enforcer to refactor this code for clarity without changing behavior."

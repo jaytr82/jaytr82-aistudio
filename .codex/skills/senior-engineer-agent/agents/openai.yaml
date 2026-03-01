@@ -1,0 +1,4 @@
+interface:
+  display_name: "Senior Engineer Agent"
+  short_description: "Deliver production-ready implementation"
+  default_prompt: "Use $senior-engineer-agent to implement this feature with production-ready code."

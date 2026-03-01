@@ -1,0 +1,4 @@
+interface:
+  display_name: "Database Optimizer"
+  short_description: "Tune schemas, queries, and access paths"
+  default_prompt: "Use $database-optimizer to review these queries and improve database performance."

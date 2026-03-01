@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Auditor"
+  short_description: "Audit code and config for exploit risk"
+  default_prompt: "Use $security-auditor to review this code and configuration for concrete security issues."

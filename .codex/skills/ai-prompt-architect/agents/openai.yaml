@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Prompt Architect"
+  short_description: "Design reusable prompts and workflows"
+  default_prompt: "Use $ai-prompt-architect to turn this rough idea into a reusable prompt workflow."

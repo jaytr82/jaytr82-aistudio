@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA Engineer Agent"
+  short_description: "Review release quality and risk coverage"
+  default_prompt: "Use $qa-engineer-agent to assess release readiness and regression risk for this change."

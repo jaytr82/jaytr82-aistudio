@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docker DevOps Master"
+  short_description: "Build tighter Docker and Compose setups"
+  default_prompt: "Use $docker-devops-master to harden and optimize this Docker setup."

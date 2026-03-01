@@ -1,0 +1,4 @@
+interface:
+  display_name: "Monorepo Manager"
+  short_description: "Organize packages and workspace boundaries"
+  default_prompt: "Use $monorepo-manager to review this monorepo structure and tighten package boundaries."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Industry Standard Engineer"
+  short_description: "Implement against official standards"
+  default_prompt: "Use $industry-standard-engineer to build this feature with official language and framework practices."

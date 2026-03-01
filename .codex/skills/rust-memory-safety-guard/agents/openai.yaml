@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rust Memory Safety Guard"
+  short_description: "Keep Rust safe, idiomatic, and tight"
+  default_prompt: "Use $rust-memory-safety-guard to review this Rust code for safety and idiomatic structure."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Manager Agent"
+  short_description: "Turn ideas into scoped delivery plans"
+  default_prompt: "Use $product-manager-agent to break this idea into an MVP and acceptance criteria."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Go Idiomatic Guard"
+  short_description: "Keep Go code idiomatic and direct"
+  default_prompt: "Use $go-idiomatic-guard to review this Go code for idiomatic structure and safety."

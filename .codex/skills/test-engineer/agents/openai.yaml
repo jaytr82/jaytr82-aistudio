@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Engineer"
+  short_description: "Add useful tests and better seams"
+  default_prompt: "Use $test-engineer to add the right mix of tests for this change."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DevOps Engineer Agent"
+  short_description: "Design CI/CD and delivery operations"
+  default_prompt: "Use $devops-engineer-agent to design the CI/CD and deployment workflow for this project."

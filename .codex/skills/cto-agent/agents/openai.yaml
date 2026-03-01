@@ -1,0 +1,4 @@
+interface:
+  display_name: "CTO Agent"
+  short_description: "Guide technical strategy and platform risk"
+  default_prompt: "Use $cto-agent to evaluate the technical direction and long-term platform risks here."

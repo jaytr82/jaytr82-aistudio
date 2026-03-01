@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Guard"
+  short_description: "Protect structure and module boundaries"
+  default_prompt: "Use $architecture-guard to review this design and tighten the architecture."

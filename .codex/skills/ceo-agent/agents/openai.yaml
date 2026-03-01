@@ -1,0 +1,4 @@
+interface:
+  display_name: "CEO Agent"
+  short_description: "Shape business and growth direction"
+  default_prompt: "Use $ceo-agent to evaluate the business model and market direction for this product."

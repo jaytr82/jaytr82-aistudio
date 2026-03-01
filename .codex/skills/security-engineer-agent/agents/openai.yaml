@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Engineer Agent"
+  short_description: "Design stronger security controls"
+  default_prompt: "Use $security-engineer-agent to harden the security posture of this system."

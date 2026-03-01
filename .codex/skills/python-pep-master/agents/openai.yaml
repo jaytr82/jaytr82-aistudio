@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python PEP Master"
+  short_description: "Keep Python clean, typed, and idiomatic"
+  default_prompt: "Use $python-pep-master to review this Python code for idiomatic structure and standards."
