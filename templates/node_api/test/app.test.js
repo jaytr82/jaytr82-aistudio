@@ -24,6 +24,22 @@ test("GET / returns starter message", async () => {
 test("invalid port values are rejected", () => {
   assert.throws(
     () => getRuntimeConfig({ PORT: "invalid", NODE_ENV: "test" }),
-    /PORT must be a positive integer/,
+    /PORT must be an integer between 1 and 65535/,
   );
+});
+
+test("out-of-range port values are rejected", () => {
+  assert.throws(
+    () => getRuntimeConfig({ PORT: "65536", NODE_ENV: "test" }),
+    /PORT must be an integer between 1 and 65535/,
+  );
+});
+
+test("unknown routes return a 404 payload", async () => {
+  const app = createApp();
+
+  const response = await request(app).get("/missing");
+
+  assert.equal(response.statusCode, 404);
+  assert.deepEqual(response.body, { message: "Route not found" });
 });
