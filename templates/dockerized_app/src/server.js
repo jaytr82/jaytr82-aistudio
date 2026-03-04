@@ -1,19 +1,42 @@
-import express from "express";
+import { createApp, getRuntimeConfig } from "./app.js";
+import { createDatabaseClient } from "./db/pool.js";
 
-const app = express();
-const port = Number(process.env.PORT || 3000);
+const config = getRuntimeConfig(process.env);
+const db = createDatabaseClient(config);
 
-app.get("/health", (_request, response) => {
-  response.json({ status: "ok" });
-});
+async function startServer() {
+  await db.query("SELECT 1 AS connected");
 
-app.get("/", (_request, response) => {
-  response.json({
-    message: "Dockerized app template",
-    databaseUrlConfigured: Boolean(process.env.DATABASE_URL),
+  const app = createApp({ db });
+  const server = app.listen(config.port, () => {
+    console.log(`Server listening on port ${config.port}`);
   });
-});
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+  const shutdown = async () => {
+    await new Promise((resolve, reject) => {
+      server.close((error) => {
+        if (error) {
+          reject(error);
+          return;
+        }
+
+        resolve();
+      });
+    });
+
+    await db.end();
+  };
+
+  process.on("SIGINT", () => {
+    shutdown().finally(() => process.exit(0));
+  });
+
+  process.on("SIGTERM", () => {
+    shutdown().finally(() => process.exit(0));
+  });
+}
+
+startServer().catch((error) => {
+  console.error("Failed to start server", error);
+  process.exit(1);
 });
